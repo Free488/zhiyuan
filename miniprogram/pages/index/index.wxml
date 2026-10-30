@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="inner">
+
+    <!-- 欢迎卡片 -->
+    <view class="welcome-card">
+      <view class="welcome-text">欢迎你，</view>
+      <view class="name">{{userName}}【{{roleText}}】</view>
+    </view>
+
+    <!-- 通知轮播栏 加宽，右侧查看详情 -->
+    <view class="notice-bar">
+      <view class="notice-left">
+        <view class="notice-icon">📢</view>
+        <view class="notice-text">{{currentNotice}}</view>
+      </view>
+      <view class="notice-detail" bindtap="goNoticeDetail">查看详情</view>
+    </view>
+
+    <!-- 功能菜单：上下并排 -->
+    <view class="menu-wrap">
+      <view class="menu-item" bindtap="goDownload">
+        <view class="icon">📁</view>
+        <view class="menu-text">资料下载</view>
+      </view>
+
+      <view class="menu-item" bindtap="goUpload">
+        <view class="icon">📤</view>
+        <view class="menu-text">资料上传分享</view>
+      </view>
+    </view>
+
+    <!-- 退出登录 -->
+    <view class="logout-btn" bindtap="logout">退出登录</view>
+
+  </view>
+</view>

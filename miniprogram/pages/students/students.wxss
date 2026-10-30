@@ -1,0 +1,30 @@
+.container {
+  padding: 60rpx 40rpx;
+}
+.welcome {
+  font-size: 34rpx;
+  margin-bottom: 60rpx;
+}
+.card-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 30rpx;
+}
+.card {
+  border: 1rpx solid #e5e5e5;
+  border-radius: 16rpx;
+  padding: 40rpx 30rpx;
+  background: #fff;
+}
+.card-title {
+  font-size: 32rpx;
+  font-weight: 500;
+  margin-bottom: 12rpx;
+}
+.card-desc {
+  font-size: 24rpx;
+  color: #666;
+}
+.logout-btn {
+  margin-top: 80rpx;
+}
