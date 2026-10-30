@@ -1,0 +1,26 @@
+.container{
+  padding: 40rpx;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+.title{
+  font-size:36rpx;
+  font-weight:bold;
+  margin-bottom:30rpx;
+}
+.subject-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#fff;
+  padding:32rpx;
+  border-radius:16rpx;
+  margin-bottom:20rpx;
+}
+.subject-name{
+  font-size:30rpx;
+}
+.arrow{
+  font-size:30rpx;
+  color:#999;
+}

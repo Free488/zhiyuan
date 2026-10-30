@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="title">📤 资料分享</view>
+  <view class="form-item">
+    <view class="label">选择学科</view>
+    <picker mode="selector" range="{{subjectList}}" bindchange="changeSubject">
+      <view class="picker">{{selectedSubject || "请选择学科"}}</view>
+    </picker>
+  </view>
+  <view class="form-item">
+    <view class="label">资料名称</view>
+    <input class="input" placeholder="输入资料名称" bindinput="inputName" value="{{name}}"/>
+  </view>
+  <view class="form-item">
+    <view class="label">选择文件</view>
+    <button bindtap="chooseFile" size="mini">选择文件</button>
+    <view wx:if="{{fileName}}" class="file-name">{{fileName}}</view>
+  </view>
+  <button class="submit-btn" bindtap="submit">提交分享</button>
+</view>

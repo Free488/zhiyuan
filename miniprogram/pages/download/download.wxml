@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="title">📂 下载资料</view>
+  <view class="subject-item" wx:for="{{subjectList}}" wx:key="index" bindtap="goFileList" data-subject="{{item}}">
+    <view class="subject-name">{{item}}</view>
+    <view class="arrow">></view>
+  </view>
+</view>

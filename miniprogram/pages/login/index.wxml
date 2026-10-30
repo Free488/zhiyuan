@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="main-title">致元书院资料库</view>
+
+  <view class="book-icon-wrap">
+    <view class="book-icon">
+      <text class="book-text">📚</text>
+    </view>
+    <view class="book-line"></view>
+  </view>
+
+  <!-- 标题 + 切换文字同一行 -->
+  <view class="title-row">
+    <view class="title">{{titleText}}</view>
+    <view class="switch-text" bindtap="showRoleSelect">切换</view>
+  </view>
+
+  <view class="input-box">
+    <input placeholder="请输入账号" value="{{id}}" bindinput="onInputId" />
+  </view>
+
+  <view class="input-box">
+    <input placeholder="请输入密码" value="{{pwd}}" bindinput="onInputPwd" password />
+  </view>
+
+  <button bindtap="handleLogin" disabled="{{loading}}" loading="{{loading}}" class="login-btn">登录</button>
+
+
+  <!-- 底部弹出弹窗 -->
+  <view wx:if="{{showSelect}}" class="mask" bindtap="closeMask">
+    <view class="popup" catchtap="noop">
+      <view class="role-item {{role==='student'?'active':''}}" bindtap="changeRole" data-role="student">普通学生</view>
+      <view class="role-item {{role==='teacher'?'active':''}}" bindtap="changeRole" data-role="teacher">老师</view>
+      <view class="role-item {{role==='member'?'active':''}}" bindtap="changeRole" data-role="member">资料部学生</view>
+      <view class="cancel-btn" bindtap="showRoleSelect">取消</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/index/index",
+    "pages/download/download",
+    "pages/upload/upload",
+    "pages/notice/notice",
+    "pages/admin/admin",
+    "pages/students/students",
+    "pages/share/share"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff7cc",
+    "navigationBarTitleText": "校内资料共享",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

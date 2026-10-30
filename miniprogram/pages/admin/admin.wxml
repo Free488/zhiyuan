@@ -1,0 +1,9 @@
+<view class="container">
+  <text class="title">欢迎管理员！</text>
+  <view class="info">账号：{{user.stu_id}}</view>
+
+  <view class="list-title">学生列表</view>
+  <view class="item">账号：2026001｜身份：学生</view>
+
+  <button bindtap="backLogin">退出登录</button>
+</view>

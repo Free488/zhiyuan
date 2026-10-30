@@ -1,0 +1,30 @@
+.container{
+  padding: 40rpx;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+.title{
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+}
+.notice-item{
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+}
+.n-title{
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.n-time{
+  font-size: 24rpx;
+  color: #888;
+  margin:10rpx 0;
+}
+.n-content{
+  font-size:26rpx;
+  color:#444;
+  line-height: 1.6;
+}

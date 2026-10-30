@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="welcome">欢迎你，{{studentName}}</view>
+
+  <view class="card-wrap">
+    <!-- 资料部入口 -->
+    <view class="card" bindtap="goResource">
+      <view class="card-title">📂 资料部</view>
+      <view class="card-desc">查看、下载学习资料</view>
+    </view>
+    <!-- 信息栏入口 -->
+    <view class="card" bindtap="goNotice">
+      <view class="card-title">📢 信息栏</view>
+      <view class="card-desc">查看通知公告</view>
+    </view>
+  </view>
+
+  <button bindtap="logout" type="default" class="logout-btn">退出登录</button>
+</view>
